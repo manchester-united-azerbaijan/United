@@ -1,0 +1,272 @@
+@import url(../fonts/sofia/sofia.css);
+@import url(../fonts/gubia/gubia.css);
+body header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(25, 22, 30, 0.7);
+}
+body header .s-top {
+  height: 70px;
+}
+body header .s-top .s-logo-holder img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body header .s-top .s-user {
+  font-family: 'Sofia Pro';
+}
+body header .s-top .s-user label {
+  font-size: 13px;
+  color: white;
+}
+body header .s-top .s-user input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  text-indent: 10px;
+  border-radius: 2px;
+  background-color: #eceaea;
+}
+body header .s-top .s-user input::-webkit-input-placeholder {
+  font-size: 11px;
+}
+body header .s-top .s-user input:-ms-input-placeholder {
+  font-size: 11px;
+}
+body header .s-top .s-user input::-ms-input-placeholder {
+  font-size: 11px;
+}
+body header .s-top .s-user input::placeholder {
+  font-size: 11px;
+}
+body header .s-top .s-user input:focus {
+  background-color: white;
+}
+body header .s-top .s-user #s-signin {
+  text-indent: 0;
+  cursor: pointer;
+  background-color: #1bec1b;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+body header .s-top .s-user #s-signin:hover {
+  background-color: #08c008;
+}
+body header .s-top .s-user #s-signup {
+  text-indent: 0;
+  cursor: pointer;
+  background-color: #e21313;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+body header .s-top .s-user #s-signup:hover {
+  background-color: #c00808;
+}
+@media (min-width: 991px) {
+  body .s-user-form-input, body .s-user-form-input-username, body .s-user-form-input-password, body .s-user-form-buttons {
+    display: inline;
+  }
+}
+@media (min-width: 576px) and (max-width: 990.9px) {
+  body .s-user-form-input, body .s-user-form-input-username, body .s-user-form-input-password {
+    display: inline;
+  }
+  body .s-user-form-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 320px) and (max-width: 575.9px) {
+  body .s-top {
+    height: 120px !important;
+  }
+  body .s-user-form-input-password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body .s-user-form-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+body #s-navbar {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 1;
+}
+body #s-navbar ul {
+  width: 900px;
+  background-color: rgba(226, 19, 19, 0.7);
+}
+body #s-navbar ul li a {
+  font-family: 'Gubia';
+  font-weight: 800;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+body #s-navbar ul li:not(:last-child) {
+  margin-right: 1.25rem;
+}
+body #s-navbar ul li.active {
+  border-bottom: 1px solid yellow;
+}
+body #s-navbar ul li.active a {
+  color: yellow;
+}
+body #s-toggle-bars {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 120px;
+  left: 0;
+  background-color: rgba(226, 19, 19, 0.7);
+}
+body #s-toggle-bars ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body #s-toggle-bars ul li a {
+  font-family: 'Gubia';
+  font-weight: 800;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+body #s-toggle-bars ul li.active {
+  border-bottom: 1px solid yellow;
+}
+body #s-toggle-bars ul li.active a {
+  color: yellow;
+}
+body #s-toggle-bars .s-down, body #s-toggle-bars .s-up {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+body #s-slider {
+  height: 800px;
+  font-family: 'Sofia Pro';
+}
+body #s-slider .s-slider-photo-holder {
+  width: 300%;
+}
+body #s-slider .s-slider-photo-holder li {
+  width: 100%;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+body #s-slider .s-slider-photo-holder li img {
+  width: 35%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #s-slider .s-slider-photo-holder li.active {
+  opacity: 1;
+  display: block;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+body #s-slider .s-slider-photo-holder .s-slider-photo-holder-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+body #s-slider .s-left, body #s-slider .s-right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+body #s-slider .s-left {
+  left: 5%;
+}
+body #s-slider .s-right {
+  right: 5%;
+}
+body #s-slider .s-slider-text {
+  width: 100%;
+  top: 40%;
+  right: 20%;
+  opacity: 1;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+body #s-slider .s-slider-text .s-slider-heading {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  font-size: 70px;
+  color: white;
+  font-weight: 800;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+body #s-slider .s-slider-text .s-slider-sub-heading {
+  position: absolute;
+  top: 70px;
+  right: -100%;
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+  color: #dfd7d7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+@media (max-width: 990.9px) {
+  body #s-slider {
+    height: 400px !important;
+  }
+  body #s-slider img {
+    height: 400px !important;
+  }
+  body #s-slider .s-slider-text {
+    display: none;
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manchester United Azərbaycan</title>
+    <link rel="icon" href="img/mu-logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER SECTION start -->
+    <header>
+        <div class="container">
+            <div class="row s-top">
+                <div class="col-2 d-flex align-items-center s-logo-holder">
+                    <a href="index.html">
+                        <img src="img/mu-logo.png" title="Manchester United logo">
+                    </a>
+                </div>
+                <div class="col-10 d-flex justify-content-end align-items-center s-user">
+                    <form id="s-user-form">
+                        <div class="s-user-form-input">
+                            <div class="s-user-form-input-username mr-sm-2">
+                                <label for="username" class="mb-0 mr-1">İstifadəçi adı</label>
+                                <input type="text" id="username" placeholder="istifadəçi adını daxil et">
+                            </div>
+                            <div class="s-user-form-input-password mt-2 mt-lg-0">
+                                <label for="password" class="mb-0 mr-1">Şifrə</label>
+                                <input type="text" id="password" placeholder="Şifrəni daxil et">
+                            </div>
+                        </div>
+                        <!-- <input type="button" id="s-signin" class="d-none d-lg-inline mr-2" value="Daxil ol">
+                        <input type="button" id="s-signup" class="d-none d-lg-inline" value="Qeydiyyatdan keç"> -->
+                        <div class="s-user-form-buttons mt-2 mt-lg-0">
+                            <input type="button" id="s-signin" class="mr-2" value="Daxil ol">
+                            <input type="button" id="s-signup" value="Qeydiyyatdan keç">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION end -->
+
+    <!-- NAVBAR SECTION start -->
+    <nav id="s-navbar" class="d-none d-sm-block">
+        <div class="container d-flex justify-content-center">
+            <ul class="mb-0 p-3 list-unstyled d-flex flex-wrap">
+                <li class="active p-1">
+                    <a href="index.html" class="text-decoration-none">Əsas səhifə</a>
+                </li>
+                <li class="p-1">
+                    <a href="news.html" class="text-decoration-none">Xəbərlər</a>
+                </li>
+                <li class="p-1">
+                    <a href="team.html" class="text-decoration-none">Heyət</a>
+                </li>
+                <li class="p-1">
+                    <a href="blog.html" class="text-decoration-none">Bloq</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR SECTION end -->
+
+    <!-- TOGGLE BARS SECTION start -->
+    <section id="s-toggle-bars" class="d-block d-sm-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-center py-1">
+                    <ul class="mb-0 p-3 list-unstyled">
+                        <li class="active p-1">
+                            <a href="index.html" class="text-decoration-none">Əsas səhifə</a>
+                        </li>
+                        <li class="p-1">
+                            <a href="news.html" class="text-decoration-none">Xəbərlər</a>
+                        </li>
+                        <li class="p-1">
+                            <a href="team.html" class="text-decoration-none">Heyət</a>
+                        </li>
+                        <li class="p-1">
+                            <a href="blog.html" class="text-decoration-none">Bloq</a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-caret-down s-down"></i>
+                    <i class="fas fa-caret-up s-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TOGGLE BARS SECTION end -->
+
+    <!-- SLIDER SECTION start -->
+    <section id="s-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0 position-relative overflow-hidden">
+                    <i class="fas fa-chevron-circle-left s-left"></i>
+                    <ul class="mb-0 list-unstyled d-flex s-slider-photo-holder">
+                        <li data-number="1" class="active">
+                            <img src="img/degea.jpg">
+                            <div class="s-slider-photo-holder-overlay position-absolute"></div>
+                        </li>
+                        <li data-number="2">
+                            <img src="img/rashford.jpg">
+                            <div class="s-slider-photo-holder-overlay position-absolute"></div>
+                        </li>
+                        <li data-number="3">
+                            <img src="img/mctominay.jpg">
+                            <div class="s-slider-photo-holder-overlay position-absolute"></div>
+                        </li>
+                        <li data-number="4">
+                            <img src="img/lingard.jpg">
+                            <div class="s-slider-photo-holder-overlay position-absolute"></div>
+                        </li>
+                    </ul>
+                    <i class="fas fa-chevron-circle-right s-right"></i>
+                    <div class="s-slider-text position-absolute">
+                        <h1 class="s-slider-heading">Manchester United</h1>
+                        <h1 class="s-slider-sub-heading">Azərbaycan</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SLIDER SECTION end -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

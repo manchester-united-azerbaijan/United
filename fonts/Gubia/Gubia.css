@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia.woff2') format('woff2'),
+        url('Gubia.woff') format('woff'),
+        url('Gubia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-BlackAlternate.woff2') format('woff2'),
+        url('Gubia-BlackAlternate.woff') format('woff'),
+        url('Gubia-BlackAlternate.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-LightAlternate.woff2') format('woff2'),
+        url('Gubia-LightAlternate.woff') format('woff'),
+        url('Gubia-LightAlternate.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-RegularAlternate.woff2') format('woff2'),
+        url('Gubia-RegularAlternate.woff') format('woff'),
+        url('Gubia-RegularAlternate.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-BoldAlternate.woff2') format('woff2'),
+        url('Gubia-BoldAlternate.woff') format('woff'),
+        url('Gubia-BoldAlternate.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-Bold.woff2') format('woff2'),
+        url('Gubia-Bold.woff') format('woff'),
+        url('Gubia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-Light.woff2') format('woff2'),
+        url('Gubia-Light.woff') format('woff'),
+        url('Gubia-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gubia';
+    src: url('Gubia-Black.woff2') format('woff2'),
+        url('Gubia-Black.woff') format('woff'),
+        url('Gubia-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
