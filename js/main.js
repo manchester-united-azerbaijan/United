@@ -62,6 +62,5 @@ $(document).ready(function()
     {
         $("#s-slider .s-slider-text").css({opacity: 0});
     },4000);
-    
     //SLIDER SECTION end
 })

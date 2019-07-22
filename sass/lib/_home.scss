@@ -76,38 +76,47 @@ body
     }
     @media (min-width: 991px)
     {
-        .s-user-form-input,.s-user-form-input-username, .s-user-form-input-password,.s-user-form-buttons
+        header
         {
-            display: inline;
+            .s-user-form-input,.s-user-form-input-username, .s-user-form-input-password,.s-user-form-buttons
+            {
+                display: inline;
+            }
         }
     }
     @media (min-width: 576px) and (max-width: 990.9px)
     {
-        .s-user-form-input,.s-user-form-input-username, .s-user-form-input-password
-        {
-            display: inline;
-        }
-        .s-user-form-buttons
-        {
-            display: flex;
-            justify-content: flex-end;
-        }
+       header
+       {
+            .s-user-form-input,.s-user-form-input-username, .s-user-form-input-password
+            {
+                display: inline;
+            }
+            .s-user-form-buttons
+            {
+                display: flex;
+                justify-content: flex-end;
+            }
+       }
     }
     @media (min-width: 320px) and (max-width: 575.9px)
     {
-        .s-top
+        header
         {
-            height: 120px!important;
-        }
-        .s-user-form-input-password
-        {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .s-user-form-buttons
-        {
-            display: flex;
-            justify-content: flex-end;
+            .s-top
+            {
+                height: 120px!important;
+            }
+            .s-user-form-input-password
+            {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .s-user-form-buttons
+            {
+                display: flex;
+                justify-content: flex-end;
+            }
         }
     }
     //HEADER SECTION end
@@ -301,6 +310,140 @@ body
     }
     //SLIDER SECTION end
 
+    //FIXTURE SECTION start
+    #s-fixture
+    {
+        font-family: 'Sofia Pro';
+        .s-fixture-rivals
+        {
+            font-weight: 300;
+            .s-fixture-rivals-home
+            {
+                width: 40px;
+                height: 40px;
+            }
+            .s-fixture-rivals-away
+            {
+                width: 40px;
+                height: 51px;
+            }
+        }
+        .s-fixture-details
+        {
+            font-weight: 200;
+            font-style: italic;
+            font-size: 15px;
+            color: #a5a5a5;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 767.9px)
+    {
+        #s-fixture
+        {
+            h5
+            {
+                font-size: 1.75rem;
+            }
+            .s-fixture-rivals-home
+            {
+                width: 50px!important;
+                height: 50px!important;
+                margin-top: .5rem;
+            }
+            .s-fixture-rivals-away
+            {
+                width: 50px!important;
+                height: 64px!important;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    //FIXTURE SECTION end
 
+    //TEAM SECTION start
+    #s-team
+    {
+        height: 540px;
+        background-image: url(../img/old-trafford.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+        .s-team-overlay
+        {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        h4
+        {
+            font-family: 'Sofia Pro';
+            color: white;
+        }
+        .s-team-gallery
+        {
+            ul
+            {
+                width: 2500px;
+                li
+                {
+                    width: 208px;
+                    height: 250px;
+                    img
+                    {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    &:not(:last-child)
+                    {
+                        margin-right: 20px;
+                    }
+                    h2,h6
+                    {
+                        color: white;
+                    }
+                    span
+                    {
+                        font-size: 13px;
+                        color: #a5a5a5;
+                    }
+                    .s-team-gallery-number
+                    {
+                        h2
+                        {
+                            font-family: 'Gubia';
+                            font-weight: 800;
+                            font-size: 40px;
+                        }
+                    }
+                    .s-team-gallery-player
+                    {
+                        h6
+                        {
+                            font-size: 15px;
+                        }
+                        h6,span
+                        {
+                            word-break: break-all;
+                        }
+                    }
+
+                }
+            }
+            ul
+            {
+                &:last-child
+                {
+                    li
+                    {
+                        height: 83px;
+                    }
+                }
+            }
+        }
+    }
+    //TEAM SECTION end
 
 }

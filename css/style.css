@@ -70,15 +70,15 @@ body header .s-top .s-user #s-signup:hover {
   background-color: #c00808;
 }
 @media (min-width: 991px) {
-  body .s-user-form-input, body .s-user-form-input-username, body .s-user-form-input-password, body .s-user-form-buttons {
+  body header .s-user-form-input, body header .s-user-form-input-username, body header .s-user-form-input-password, body header .s-user-form-buttons {
     display: inline;
   }
 }
 @media (min-width: 576px) and (max-width: 990.9px) {
-  body .s-user-form-input, body .s-user-form-input-username, body .s-user-form-input-password {
+  body header .s-user-form-input, body header .s-user-form-input-username, body header .s-user-form-input-password {
     display: inline;
   }
-  body .s-user-form-buttons {
+  body header .s-user-form-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,10 +88,10 @@ body header .s-top .s-user #s-signup:hover {
   }
 }
 @media (min-width: 320px) and (max-width: 575.9px) {
-  body .s-top {
+  body header .s-top {
     height: 120px !important;
   }
-  body .s-user-form-input-password {
+  body header .s-user-form-input-password {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,7 +99,7 @@ body header .s-top .s-user #s-signup:hover {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  body .s-user-form-buttons {
+  body header .s-user-form-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -269,4 +269,94 @@ body #s-slider .s-slider-text .s-slider-sub-heading {
   body #s-slider .s-slider-text {
     display: none;
   }
+}
+body #s-fixture {
+  font-family: 'Sofia Pro';
+}
+body #s-fixture .s-fixture-rivals {
+  font-weight: 300;
+}
+body #s-fixture .s-fixture-rivals .s-fixture-rivals-home {
+  width: 40px;
+  height: 40px;
+}
+body #s-fixture .s-fixture-rivals .s-fixture-rivals-away {
+  width: 40px;
+  height: 51px;
+}
+body #s-fixture .s-fixture-details {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 15px;
+  color: #a5a5a5;
+}
+@media (min-width: 320px) and (max-width: 767.9px) {
+  body #s-fixture h5 {
+    font-size: 1.75rem;
+  }
+  body #s-fixture .s-fixture-rivals-home {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: .5rem;
+  }
+  body #s-fixture .s-fixture-rivals-away {
+    width: 50px !important;
+    height: 64px !important;
+    margin-bottom: .5rem;
+  }
+}
+body #s-team {
+  height: 540px;
+  background-image: url(../img/old-trafford.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body #s-team .s-team-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body #s-team h4 {
+  font-family: 'Sofia Pro';
+  color: white;
+}
+body #s-team .s-team-gallery ul {
+  width: 2500px;
+}
+body #s-team .s-team-gallery ul li {
+  width: 208px;
+  height: 250px;
+}
+body #s-team .s-team-gallery ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #s-team .s-team-gallery ul li:not(:last-child) {
+  margin-right: 20px;
+}
+body #s-team .s-team-gallery ul li h2, body #s-team .s-team-gallery ul li h6 {
+  color: white;
+}
+body #s-team .s-team-gallery ul li span {
+  font-size: 13px;
+  color: #a5a5a5;
+}
+body #s-team .s-team-gallery ul li .s-team-gallery-number h2 {
+  font-family: 'Gubia';
+  font-weight: 800;
+  font-size: 40px;
+}
+body #s-team .s-team-gallery ul li .s-team-gallery-player h6 {
+  font-size: 15px;
+}
+body #s-team .s-team-gallery ul li .s-team-gallery-player h6, body #s-team .s-team-gallery ul li .s-team-gallery-player span {
+  word-break: break-all;
+}
+body #s-team .s-team-gallery ul:last-child li {
+  height: 83px;
 }
